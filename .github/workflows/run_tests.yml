@@ -9,7 +9,6 @@ on:
 jobs:
   test-build:
     name: Test build on ${{ matrix.os }} with Swift ${{ matrix.swift-version }}
-    needs: swift-format
     strategy:
       matrix:
         os: [macos-latest, ubuntu-latest, windows-latest]
